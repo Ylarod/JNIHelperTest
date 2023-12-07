@@ -38,7 +38,7 @@ Java_com_example_jnihelper_MainActivity_reverseStringArray(JNIEnv *env, jobject 
             break;
         }
         auto str = JUTFString(env, (jstring)className.get(), "null str");
-//        ALOGI("class: %s", str.get());
+        ALOGV("class: %s", str.get());
     }
     ALOGE("for count end=%d", count);
     ALOGW("for const in");
@@ -50,7 +50,7 @@ Java_com_example_jnihelper_MainActivity_reverseStringArray(JNIEnv *env, jobject 
             break;
         }
         auto str = JUTFString(env, (jstring)className.get(), "null str");
-//        ALOGI("class: %s", str.get());
+        ALOGV("class: %s", str.get());
     }
     ALOGE("for count end=%d", count);
     ALOGW("for");
@@ -62,7 +62,7 @@ Java_com_example_jnihelper_MainActivity_reverseStringArray(JNIEnv *env, jobject 
             break;
         }
         auto str = JUTFString(env, (jstring)classNameList[i].get(), "null str");
-//        ALOGI("class: %s", str.get());
+        ALOGV("class: %s", str.get());
     }
     ALOGW("for iter");
     count = 0;
@@ -73,7 +73,7 @@ Java_com_example_jnihelper_MainActivity_reverseStringArray(JNIEnv *env, jobject 
             break;
         }
         auto str = JUTFString(env, (jstring)(*i).get(), "null str");
-//        ALOGI("class: %s", str.get());
+        ALOGV("class: %s", str.get());
     }
     ALOGE("for count end=%d", count);
     ALOGW("for const iter");
@@ -85,7 +85,7 @@ Java_com_example_jnihelper_MainActivity_reverseStringArray(JNIEnv *env, jobject 
             break;
         }
         auto str = JUTFString(env, (jstring)(*i).get(), "null str");
-//        ALOGI("class: %s", str.get());
+        ALOGV("class: %s", str.get());
     }
     ALOGE("for count end=%d", count);
     return string_array;
